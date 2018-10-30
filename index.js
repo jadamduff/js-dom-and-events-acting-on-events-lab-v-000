@@ -14,6 +14,5 @@ function addNewElementAsLi(text) {
   let newLi = document.createElement('li');
   let newLiText = document.createTextNode(text);
   newLi.appendChild(newLiText);
-  let list = document.getElementsByClassName('employee-list');
-  list.appendChild(newLi);
+  let list = document.getElementsByClassName('employee-list')[0].appendChild(newLi);
 }
