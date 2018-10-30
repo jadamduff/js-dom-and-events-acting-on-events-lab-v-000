@@ -16,3 +16,7 @@ function addNewElementAsLi() {
   newLi.appendChild(newLiText);
   let list = document.getElementsByClassName('employee-list')[0].appendChild(newLi);
 }
+
+function addNewLiOnClick() {
+  document.querySelector('input[type=submit]').addEventListener('click', addNewElementAsLi());
+}
